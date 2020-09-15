@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.clearFix {
+  clear: both;
+}
+#mainHeader {
+  background: #333;
+  color: white;
+}
+#mainNav {
+  background: #ccc;
+  color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+#mainNav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#mainNav li {
+  display: inline;
+  padding: 5px 10px;
+}
+#mainNav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+#mainNav li:hover {
+  background: #aaa;
+}
+#jumbo {
+  background-image: url('../images/bg.jpg');
+  background-position: center center;
+  min-height: 200px;
+  text-align: center;
+}
+#jumbo h1 {
+  color: white;
+  font-size: 45px;
+  padding-top: 20px;
+  line-height: 1.6em;
+}
+#main {
+  float: right;
+  width: 70%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+#sidebar {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid #333;
+  box-sizing: border-box;
+  letter-spacing: .2em;
+  word-spacing: 1em;
+}
+#mainFooter {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+#pExample {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #333;
+  border-radius: 20px 10px 0 5px;
+  position: relative;
+}
+#pExample span:first-child {
+  position: absolute;
+  bottom: 20px;
+  right: 100px;
+  font-style: italic;
+  font-weight: 800;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#pExample span:last-child {
+  position: absolute;
+  top: 100px;
+  left:30px;
+}
+#fixed {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  background:#ff652f;
+  padding: 5px;
+}
+@media (max-width:600px){
+  #main, #sidebar {
+    width: 100%;
+    float: none;
+    border: none;
+  }
+}
+/* p {
+  border-top: 5px solid blue;
+  border-right: 2px dotted green;
+  border-bottom: 5px dashed red;
+  border-left: 2px dotted green;
+  border: 3px solid green;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
+  padding: 20px;
+  margin-top: 40px;
+} */
